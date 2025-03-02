@@ -22,4 +22,8 @@
 |  | |  |\   |     |  |     |  `--'  |        |  |     |  |  |  | |  |____       \    /\    /    |  | |  `----.|  '--'  |
 |__| |__| \__|     |__|      \______/         |__|     |__|  |__| |_______|       \__/  \__/     |__| |_______||_______/
 
-
+--------------------------------------------------------------------------------------------------------------------------
+Bem-vindo(a) ao jogo dos Seres Vivos! Explore a vida na Floresta Tropical, Savana e Floresta Temperada.
+Enfrente os desafios de cada bioma, adapte-se e sobreviva enquanto descobre a rica biodiversidade ao seu redor.
+Embarque nesta jornada emocionante agora!
+--------------------------------------------------------------------------------------------------------------------------

@@ -1,5 +1,7 @@
-import enums.Familia;
-import enums.GrauDefesa;
+package model;
+
+import model.enums.Familia;
+import model.enums.GrauDefesa;
 
 public class Planta extends SerVivo{
     private Familia familia;

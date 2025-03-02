@@ -1,3 +1,10 @@
+package controller;
+
+import model.Animal;
+import model.Inseto;
+import model.Planta;
+import model.SerVivo;
+
 import java.util.ArrayList;
 
 public class MeioAmbiente {

@@ -1,4 +1,6 @@
-import enums.Dieta;
+package model;
+
+import model.enums.Dieta;
 
 public class Animal extends SerVivo{
     private boolean fome;
