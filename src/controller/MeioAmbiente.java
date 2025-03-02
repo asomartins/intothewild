@@ -69,8 +69,8 @@ public class MeioAmbiente {
 
     // Imprime na tela o barulho do animal
 
-    public void animalFazBarulho() {
-        System.out.println("Barulho do animal");
+    public String animalFazBarulho(Animal animal) {
+        return animal.getBarulho();
     }
 
    // Imprime na tela "O (nome do animal) movimentou-se"
@@ -142,8 +142,8 @@ public class MeioAmbiente {
 
     }
 
-    public String insetoChateia() {
-        return "Barulho do inseto";
+    public void insetoChateia(Inseto inseto) {
+        System.out.println("Bzzzzzz....");
     }
 
     public void adicionarSerVivo(SerVivo serVivoAtual) {

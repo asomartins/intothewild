@@ -1,6 +1,6 @@
-nome;especie;pais;idade;fome;peso;inteligencia;dieta;barulho
-Nala;Onça Pintada (Panthera onca);Brasil;5;true;90.5;75;Carnívoro;Roar
-Cappy;Capivara (Hydrochoerus hydrochaeris);Brasil;3;false;45;30;Herbívoro;Squeak
-Sid;Preguiça (Bradypus variegatus);Brasil;5;false;8;40;Herbívoro;Som suave
-George;Macaco-aranha (Ateles geoffroyi);Costa Rica;7;true;9.2;82;Herbívoro;Chiados
-Hera;Águia (Harpia harpyja);Brasil;4;true;7.5;88;Carnívoro;Grito agudo
+ambiente;nome;especie;pais;idade;fome;peso;inteligencia;dieta;barulho
+Floresta Tropical;Onça Pintada;Panthera onca;Brasil;5;sim;90.5;75;Carnívoro;Roar
+Floresta Tropical;Capivara;Hydrochoerus hydrochaeris;Brasil;3;não;45;30;Herbívoro;Squeak
+Floresta Tropical;Preguiça;Bradypus variegatus;Brasil;5;não;8;40;Herbívoro;Som suave
+Floresta Tropical;Macaco-aranha;Ateles geoffroyi;Costa Rica;7;sim;9.2;82;Herbívoro;Chiados
+Floresta Tropical;Águia;Harpia harpyja;Brasil;4;não;7.5;88;Carnívoro;Grito agudo

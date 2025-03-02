@@ -1,0 +1,8 @@
+ambiente;nome;especie;pais;idade;venenoso
+floresta tropical;Besouro Hércules;Dynastes hercules;América do Sul;3;não
+floresta tropical;Aranha de Armadeira;Phoneutria;América do Sul;2;sim
+floresta tropical;Borboleta Morpho;Morpho peleides;América Central;1;não
+floresta tropical;Viúva-Negra;Latrodectus;América do Sul;3;sim
+floresta tropical;Grilo-cantor;Gryllus;América do Sul;1;não
+
+

@@ -17,12 +17,14 @@ public class SerVivo {
         return especie;
     }
 
+    // Imprime a descrição do ser vivo
     public void imprimirDescricaoSerVivo() {
-        System.out.println("********** Ser Vivo **********");
-        System.out.println("Nome: " + nome);
-        System.out.println("Espécie: " + especie);
-        System.out.println("País: "+ pais);
-        System.out.println("Idade: "+ idade);
+        System.out.println("\n********** Descrição do Ser Vivo **********");
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Espécie: " + this.especie);
+        System.out.println("País: " + this.pais);
+        System.out.println("Idade: " + this.idade);
     }
+
     public void simulador() {}
 }

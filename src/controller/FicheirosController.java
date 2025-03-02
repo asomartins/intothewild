@@ -1,6 +1,6 @@
 package controller;
 
-public class GerenciadorArquivos {
+public class FicheirosController {
 
     private static final String FICHEIRO_INTRO_JOGO = "ficheiros/introJogo.txt";
     private static final String FICHEIRO_ANIMAIS = "ficheiros/animais.txt";

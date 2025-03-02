@@ -1,13 +1,12 @@
 package model;
 
 import model.enums.Familia;
-import model.enums.GrauDefesa;
 
 public class Planta extends SerVivo{
     private Familia familia;
-    public GrauDefesa grauDefesa;
+    private int grauDefesa;
 
-    public Planta(String especie, int idade, String nome, String pais, Familia familia, GrauDefesa grauDefesa) {
+    public Planta(String nome, String especie, String pais, int idade, Familia familia, int grauDefesa) {
         super(nome, especie, pais, idade);
         this.familia = familia;
         this.grauDefesa = grauDefesa;
@@ -17,7 +16,13 @@ public class Planta extends SerVivo{
         return familia;
     }
 
-    public GrauDefesa getGrauDefesa() {
+    public int getGrauDefesa() {
         return grauDefesa;
+    }
+
+    // Imprime a descrição da planta
+    public void imprimirDescricaoPlanta() {
+        System.out.println("Família: " + this.familia);
+        System.out.println("Grau de Defesa: " + this.grauDefesa);
     }
 }

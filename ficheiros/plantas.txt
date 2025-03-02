@@ -1,0 +1,10 @@
+ambiente;nome;especie;pais;idade;familia;graudefesa
+Floresta Tropical;Flor de Bananeira;Musa spp.;Sudeste Asiático;3;flores;2
+Floresta Tropical;Papaya Comum;Carica papaya;Brasil;3;árvores;2
+Floresta Tropical;Erva de Passarinho;Phoradendron spp.;América do Sul;2;ervas;1
+Floresta Tropical;Orvalho do Sol;Drosera rotundifolia;Brasil;2;carnívoras;3
+Floresta Tropical;Hibiscus;Hibiscus rosa-sinensis;Brasil;3;flores;1
+
+
+
+

@@ -1,8 +1,9 @@
 package view;
 
-import controller.GerenciadorArquivos;
-import model.*;
-import model.enums.Dieta;
+import controller.FicheirosController;
+import controller.AnimalController;
+import controller.InsetoController;
+import controller.PlantaController;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,8 +18,9 @@ public class IntoTheWildMain {
      * @throws FileNotFoundException
      */
     public static void main(String[] args) throws FileNotFoundException {
+
         //Caminho do ficheiro para exibir a tela de abertura do jogo
-        File file = new File(GerenciadorArquivos.obterFicheiroIntroJogo());
+        File file = new File(FicheirosController.obterFicheiroIntroJogo());
 
         //Leitor do ficheiro de animais
         Scanner scanner = new Scanner(file);
@@ -64,6 +66,10 @@ public class IntoTheWildMain {
      * @throws FileNotFoundException
      */
     public static void criarAmbiente() throws FileNotFoundException {
+        AnimalController animalController = new AnimalController();
+        PlantaController plantaController = new PlantaController();
+        InsetoController insetoController = new InsetoController();
+
         String opcao;
         Scanner input = new Scanner(System.in);
         do {
@@ -80,7 +86,9 @@ public class IntoTheWildMain {
 
             switch (opcao) {
                 case "1":
-                    criarSeresFlorestaTropical();
+                    animalController.criarAnimaisFlorestaTropical();
+                    plantaController.criarPlantasFlorestaTropical();
+                    insetoController.criarInsetosFlorestaTropical();
                     break;
                 case "2":
                     //criarSeresSavana();
@@ -95,63 +103,5 @@ public class IntoTheWildMain {
                     System.out.println("Opção inválida!");
             }
         } while (!opcao.equals("4"));
-    }
-
-
-    /**
-     * Percorre os ficheiros de animais, plantas e insetos
-     * Cria os seres vivos no ambiente floresta tropical
-     *
-     * @throws FileNotFoundException
-     */
-    public static void criarSeresFlorestaTropical() throws FileNotFoundException {
-        System.out.println("Floresta tropical gerada!");
-        /*model.Animal oncaPintada = new model.Animal("Nala", "Onça Pintada (Panthera onca)", "Brasil",5, true, 90.5, 75, Dieta.CARNIVORO,  "Roar");
-        model.Animal capivara = new model.Animal("Cappy", "Capivara (Hydrochoerus hydrochaeris)", "Brasil", 3, false, 45, 30, Dieta.HERBIVORO, "Squeak");
-        model.Animal preguica = new model.Animal("Sid", "Preguiça (Bradypus variegatus)", "Brasil", 5, false, 8.0, 40, Dieta.HERBIVORO, "Som suave");
-        model.Animal macacoAranha = new model.Animal("George", "Macaco-aranha (Ateles geoffroyi)", "Costa Rica", 7, true, 9.2, 82, Dieta.HERBIVORO, "Chiados");
-        model.Animal aguia = new model.Animal("Hera", "Águia (Harpia harpyja)", "Brasil", 4, true, 7.5, 88, Dieta.CARNIVORO, "Grito agudo");*/
-
-        // Caminho do ficheiro de animais
-        File ficheiroAnimais = new File(GerenciadorArquivos.obterFicheiroAnimais());
-
-        // Leitor do ficheiro
-        Scanner scanner = new Scanner(ficheiroAnimais);
-
-        String linha, nome, especie, pais, idade, fome, peso, inteligencia, tipoDieta, barulho;
-        Dieta dieta = null;
-
-        // Linha de cabeçalho do leitor
-        linha = scanner.nextLine();
-
-        // Ciclo para ler o ficheiro
-        while (scanner.hasNextLine()) {
-            linha = scanner.nextLine();
-            String[] itensLinha = linha.split(";");
-            nome = itensLinha[0];
-            especie = itensLinha[1];
-            pais = itensLinha[2];
-            idade = itensLinha[3];
-            fome = itensLinha[4];
-            peso = itensLinha[5];
-            inteligencia = itensLinha[6];
-            tipoDieta = itensLinha[7];
-            barulho = itensLinha[8];
-
-            switch (tipoDieta){
-                case "Carnívoro":
-                    dieta = Dieta.CARNIVORO;
-                    break;
-                case "Herbívoro":
-                    dieta = Dieta.HERBIVORO;
-                    break;
-                case "Onívoro":
-                    dieta = Dieta.ONIVORO;
-                    break;
-            }
-
-            Animal animal = new Animal(nome, especie, pais, Integer.parseInt(idade), Boolean.parseBoolean(fome), Double.parseDouble(peso), Integer.parseInt(inteligencia), dieta, barulho);
-            animal.imprimirDescricaoSerVivo();
-        }
     }
 }

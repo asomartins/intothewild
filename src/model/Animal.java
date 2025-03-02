@@ -26,8 +26,16 @@ public class Animal extends SerVivo{
         return peso;
     }
 
+    public int getInteligencia() {
+        return inteligencia;
+    }
+
     public Dieta getDieta() {
         return dieta;
+    }
+
+    public String getBarulho() {
+        return barulho;
     }
 
     public void setFome(boolean fome) {
@@ -47,5 +55,14 @@ public class Animal extends SerVivo{
             }
         }
         return null;
+    }
+
+    // Imprime a descrição do animal
+    public void imprimirDescricaoAnimal() {
+        System.out.println("Está com fome: " + (this.fome ? "Sim" : "Não"));
+        System.out.println("Peso: " + this.peso);
+        System.out.println("Nível de inteligência: " + this.inteligencia);
+        System.out.println("Dieta: " + this.dieta);
+        System.out.println("Barulho: " + this.barulho);
     }
 }
