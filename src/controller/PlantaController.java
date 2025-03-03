@@ -76,7 +76,7 @@ public class PlantaController {
         if (!isPlantaFlorestaTropical) {
             System.out.println("Não foi possível adicionar as plantas. O ficheiro não possui plantas de Floresta Tropical!");
         } else {
-            System.out.println("\nAs plantas foram criadas.");
+            System.out.println("\nAs plantas foram criadas com sucesso.");
         }
     }
 
@@ -147,7 +147,7 @@ public class PlantaController {
         if (!isPlantaSavana) {
             System.out.println("Não foi possível adicionar as plantas. O ficheiro não possui plantas de Savana!");
         } else {
-            System.out.println("\nAs plantas foram criadas.");
+            System.out.println("\nAs plantas foram criadas com sucesso.");
         }
     }
 
@@ -218,7 +218,7 @@ public class PlantaController {
         if (!isFlorestaTemperada) {
             System.out.println("Não foi possível adicionar as plantas. O ficheiro não possui plantas de Floresta Temperada!");
         } else {
-            System.out.println("\nAs plantas foram criadas.");
+            System.out.println("\nAs plantas foram criadas com sucesso.");
         }
     }
 }

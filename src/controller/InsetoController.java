@@ -63,7 +63,7 @@ public class InsetoController {
         if (!isInsetoFlorestaTropical) {
             System.out.println("Não foi possível adicionar os insetos. O ficheiro não possui insetos de Floresta Tropical!");
         } else {
-            System.out.println("\nOs insetos foram criados.");
+            System.out.println("\nOs insetos foram criados com sucesso.");
         }
     }
 
@@ -122,7 +122,7 @@ public class InsetoController {
         if (!isInsetoSavana) {
             System.out.println("Não foi possível adicionar os insetos. O ficheiro não possui insetos de Savanal!");
         } else {
-            System.out.println("\nOs insetos foram criados.");
+            System.out.println("\nOs insetos foram criados com sucesso.");
         }
     }
 
@@ -181,7 +181,7 @@ public class InsetoController {
         if (!isInsetoFlorestaTemperada) {
             System.out.println("Não foi possível adicionar os insetos. O ficheiro não possui insetos de Floresta Temperada!");
         } else {
-            System.out.println("\nOs insetos foram criados.");
+            System.out.println("\nOs insetos foram criados com sucesso.");
         }
     }
 
