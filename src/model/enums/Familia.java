@@ -1,5 +1,5 @@
 package model.enums;
 
 public enum Familia {
-    ÁRVORES, FLORES, ERVAS, CARNIVORAS
+    ARVORES, FLORES, ERVAS, CARNIVORAS
 }

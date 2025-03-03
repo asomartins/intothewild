@@ -13,6 +13,10 @@ public class SerVivo {
         this.idade = idade;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
     public String getEspecie() {
         return especie;
     }

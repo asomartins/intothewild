@@ -9,13 +9,15 @@ import java.util.ArrayList;
 
 public class MeioAmbiente {
     private String nome;
-    private double qtdAguaAmbiente;
-    private ArrayList<SerVivo> seres;
+    private double qtdAguaDisponivel;
+    private ArrayList<SerVivo> seresVivos;
+
+    // Construtor para instanciar um objeto Meio Ambiente
 
     public MeioAmbiente(String nome, double qtdAgua) {
         this.nome = nome;
-        this.qtdAguaAmbiente = qtdAguaAmbiente;
-        this.seres = new ArrayList<>();
+        this.qtdAguaDisponivel = qtdAgua;
+        this.seresVivos = new ArrayList<>();
     }
 
     // A quantidade de água que a planta bebe depende da sua família:
@@ -26,7 +28,7 @@ public class MeioAmbiente {
         double qtdAguaPlanta = 0;
 
         switch (plantaAtual.getFamilia()) {
-            case ÁRVORES:
+            case ARVORES:
                 qtdAguaPlanta = 1.0;
                 break;
             case FLORES:
@@ -46,14 +48,13 @@ public class MeioAmbiente {
         // Se houver, diminui a quantidade de água no ambiente e retorna true
         // Caso contrário, a planta seca e é removida do ambiente e retorna false
 
-         if (qtdAguaPlanta > this.qtdAguaAmbiente) {
-              this.seres.remove(plantaAtual);
+         if (qtdAguaPlanta > this.qtdAguaDisponivel) {
+              this.seresVivos.remove(plantaAtual);
             return false;
         } else {
-            this.qtdAguaAmbiente -= qtdAguaPlanta;
+            this.qtdAguaDisponivel -= qtdAguaPlanta;
             return true;
         }
-
     }
 
     // Se houver insetos no ambiente, a planta come um e retorna true
@@ -86,11 +87,11 @@ public class MeioAmbiente {
     public boolean animalBebe(Animal animalAtual) {
         double qtdAguaAnimal = animalAtual.getPeso() * 0.025;
 
-        if (qtdAguaAnimal > this.qtdAguaAmbiente) {
+        if (qtdAguaAnimal > this.qtdAguaDisponivel) {
            removerSerVivo(animalAtual);
            return false;
         } else {
-            this.qtdAguaAmbiente -= qtdAguaAnimal;
+            this.qtdAguaDisponivel -= qtdAguaAnimal;
             return true;
         }
     }
@@ -107,16 +108,26 @@ public class MeioAmbiente {
 
         // Verifica se o animal está com fome e, se estiver, tenta comer outro ser vivo do ambiente
 
-        if (animalAtual.isFome()) {
+        /*if (animalAtual.isFome()) {
                     for (int i = 0; i < seres.size(); i++) {
-
                     SerVivo serVivoAtual = this.seres.get(i);
 
                     switch (animalAtual.getDieta()) {
                         // Se o animal for carnívoro, ele tenta comer outro animal ou inseto
                         case CARNIVORO:
                             if (serVivoAtual instanceof Animal) {
-
+                                if (this.peso > adversario.peso) {
+                                    return this;
+                                } else if (this.peso < adversario.peso) {
+                                    return adversario;
+                                } else if (this.peso == adversario.peso) {
+                                    if (this.inteligencia > adversario.inteligencia) {
+                                        return this;
+                                    } else if (this.inteligencia < adversario.inteligencia) {
+                                        return adversario;
+                                    }
+                                }
+                                return null;
                             }
                             if (serVivoAtual instanceof Inseto)
                             {
@@ -138,7 +149,7 @@ public class MeioAmbiente {
 
                     animalAtual.setFome(false);
             }
-        }
+        }*/
 
     }
 
@@ -147,13 +158,33 @@ public class MeioAmbiente {
     }
 
     public void adicionarSerVivo(SerVivo serVivoAtual) {
-        this.seres.add(serVivoAtual);
+        this.seresVivos.add(serVivoAtual);
     }
 
     public void removerSerVivo(SerVivo serVivoAtual) {
-        this.seres.remove(serVivoAtual);
+        this.seresVivos.remove(serVivoAtual);
     }
 
-    public void listarSeresVivos() {}
+    public void listarSeresVivos() {
+        System.out.println("\n********** Seres Vivos Presentes no Ambiente **********");
 
+        for (int i = 0; i < seresVivos.size(); i++) {
+            SerVivo serVivoAtual = this.seresVivos.get(i);
+            serVivoAtual.imprimirDescricaoSerVivo();
+        }
+    }
+
+    public void simulador() {
+        for (int i = 0; i < seresVivos.size(); i++) {
+            SerVivo serVivoAtual = this.seresVivos.get(i);
+
+            if (serVivoAtual instanceof Planta) {
+               Planta plantaAtual = (Planta) serVivoAtual;
+               if (plantaBebe(plantaAtual)) {
+                   System.out.println("A planta" + plantaAtual.getNome() + " bebeu água");
+                   System.out.println("Quantidade de água disponível: " + this.qtdAguaDisponivel);
+               }
+            }
+        }
+    }
 }

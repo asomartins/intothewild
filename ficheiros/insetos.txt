@@ -4,5 +4,13 @@ floresta tropical;Aranha de Armadeira;Phoneutria;América do Sul;2;sim
 floresta tropical;Borboleta Morpho;Morpho peleides;América Central;1;não
 floresta tropical;Viúva-Negra;Latrodectus;América do Sul;3;sim
 floresta tropical;Grilo-cantor;Gryllus;América do Sul;1;não
-
-
+Savana;Escorpião;Scorpiones;África do Sul;1;sim
+Savana;Formiga Leão;Myrmeleontidae;Quênia;1;não
+Savana;Gafanhoto;Locusta migratoria;Tanzânia;1;não
+Savana;Cupim;Isoptera;Namíbia;1;não
+Savana;Aranha Viúva Negra;Latrodectus;Botsuana;1;sim
+Floresta Temperada;Louva-a-deus;Mantis religiosa;EUA;1;não
+Floresta Temperada;Vespa;Vespula germanica;Reino Unido;1;sim
+Floresta Temperada;Aranha Lobo;Lycosidae;Canadá;1;sim
+Floresta Temperada;Joaninha;Coccinella septempunctata;França;1;não
+Floresta Temperada;Formiga-de-Folha;Atta colombica;México;1;não

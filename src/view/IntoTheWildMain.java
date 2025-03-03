@@ -1,9 +1,6 @@
 package view;
 
-import controller.FicheirosController;
-import controller.AnimalController;
-import controller.InsetoController;
-import controller.PlantaController;
+import controller.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -69,6 +66,7 @@ public class IntoTheWildMain {
         AnimalController animalController = new AnimalController();
         PlantaController plantaController = new PlantaController();
         InsetoController insetoController = new InsetoController();
+        MeioAmbiente meioAmbiente;
 
         String opcao;
         Scanner input = new Scanner(System.in);
@@ -86,15 +84,23 @@ public class IntoTheWildMain {
 
             switch (opcao) {
                 case "1":
-                    animalController.criarAnimaisFlorestaTropical();
-                    plantaController.criarPlantasFlorestaTropical();
-                    insetoController.criarInsetosFlorestaTropical();
+                    meioAmbiente = new MeioAmbiente("Floresta Tropical",1000000);
+                    animalController.criarAnimaisFlorestaTropical(meioAmbiente);
+                    plantaController.criarPlantasFlorestaTropical(meioAmbiente);
+                    insetoController.criarInsetosFlorestaTropical(meioAmbiente);
+                    meioAmbiente.simulador();
                     break;
                 case "2":
-                    //criarSeresSavana();
+                    meioAmbiente = new MeioAmbiente("Savana",5000000);
+                    animalController.criarAnimaisSavana(meioAmbiente);
+                    plantaController.criarPlantasSavana(meioAmbiente);
+                    insetoController.criarInsetosSavana(meioAmbiente);
                     break;
                 case "3":
-                    //criarSeresFlorestaTemperada();
+                    meioAmbiente = new MeioAmbiente("Floresta Temperada",4000000);
+                    animalController.criarAnimaisFlorestaTemperada(meioAmbiente);
+                    plantaController.criarPlantasFlorestaTemperada(meioAmbiente);
+                    insetoController.criarInsetosFlorestaTemperada(meioAmbiente);
                     break;
                 case "4":
                     System.out.println("Opção selecionada: Voltar ao menu inicial");

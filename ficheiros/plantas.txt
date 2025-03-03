@@ -4,7 +4,13 @@ Floresta Tropical;Papaya Comum;Carica papaya;Brasil;3;árvores;2
 Floresta Tropical;Erva de Passarinho;Phoradendron spp.;América do Sul;2;ervas;1
 Floresta Tropical;Orvalho do Sol;Drosera rotundifolia;Brasil;2;carnívoras;3
 Floresta Tropical;Hibiscus;Hibiscus rosa-sinensis;Brasil;3;flores;1
-
-
-
-
+Savana;Acácia;Acacia spp.;África Oriental;5;árvores;4
+Savana;Girassol selvagem;Helianthus spp.;África do Sul;2;flores;3
+Savana;Armadilha de Vênus;Dionaea muscipula;Quênia;4;carnívoras;5
+Savana;Planta Jarro;Nepenthes spp.;Tanzânia;3;carnívoras;5
+Savana;Capim-dos-pampas;Cortaderia selloana;Argentina;3;ervas;2
+Floresta Temperada;Carvalho;Quercus spp.;EUA;20;árvores;4
+Floresta Temperada;Lírio-do-vale;Convallaria majalis;Reino Unido;4;flores;2
+Floresta Temperada;Urtiga;Urtica dioica;Reino Unido;2;ervas;2
+Floresta Temperada;Planta Píncer;Darlingtonia californica;EUA;5;carnívoras;5
+Floresta Temperada;Roseta Sundew;Drosera rotundifolia;Canadá;3;carnívoras;5

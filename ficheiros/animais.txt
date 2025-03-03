@@ -4,3 +4,13 @@ Floresta Tropical;Capivara;Hydrochoerus hydrochaeris;Brasil;3;não;45;30;Herbív
 Floresta Tropical;Preguiça;Bradypus variegatus;Brasil;5;não;8;40;Herbívoro;Som suave
 Floresta Tropical;Macaco-aranha;Ateles geoffroyi;Costa Rica;7;sim;9.2;82;Herbívoro;Chiados
 Floresta Tropical;Águia;Harpia harpyja;Brasil;4;não;7.5;88;Carnívoro;Grito agudo
+Savana;Leão;Panthera leo;Quênia;8;sim;190;80;Carnívoro;Rugido
+Savana;Guepardo;Acinonyx jubatus;Tanzânia;5;sim;60;70;Carnívoro;Miado
+Savana;Elefante Africano;Loxodonta africana;África do Sul;15;não;6000;60;Herbívoro;Trombetear
+Savana;Zebra;Equus quagga;Botswana;7;não;350.0;40;Herbívoro;Latido
+Savana;Impala;Aepyceros melampus;Zimbábue;6;sim;50;50;Herbívoro;Chiar
+Floresta Temperada;Urso Pardo;Ursus arctos;EUA;10;não;320;75;Onívoro;Rugido
+Floresta Temperada;Lince Ibérico;Lynx pardinus;Espanha;7;sim;13;70;Carnívoro;Miado
+Floresta Temperada;Lobo Cinzento;Canis lupus;Alemanha;6;sim;40;80;Carnívoro;Uivo
+Floresta Temperada;Esquilo Cinza;Sciurus carolinensis;Canadá;3;sim;0.5;50;Onívoro;Guincho
+Floresta Temperada;Coelho Europeu;Oryctolagus cuniculus;França;4;sim;2;40;Herbívoro;Squeak
