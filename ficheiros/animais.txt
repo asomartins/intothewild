@@ -7,7 +7,7 @@ Floresta Tropical;Águia;Harpia harpyja;Brasil;4;não;7.5;88;Carnívoro;Grito ag
 Savana;Leão;Panthera leo;Quênia;8;sim;190;80;Carnívoro;Rugido
 Savana;Guepardo;Acinonyx jubatus;Tanzânia;5;sim;60;70;Carnívoro;Miado
 Savana;Elefante Africano;Loxodonta africana;África do Sul;15;não;6000;60;Herbívoro;Trombetear
-Savana;Zebra;Equus quagga;Botswana;7;não;350.0;40;Herbívoro;Latido
+Savana;Zebra;Equus quagga;Botswana;7;não;350.0;40;Herbívoro;Relincho
 Savana;Impala;Aepyceros melampus;Zimbábue;6;sim;50;50;Herbívoro;Chiar
 Floresta Temperada;Urso Pardo;Ursus arctos;EUA;10;não;320;75;Onívoro;Rugido
 Floresta Temperada;Lince Ibérico;Lynx pardinus;Espanha;7;sim;13;70;Carnívoro;Miado

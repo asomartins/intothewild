@@ -1,11 +1,10 @@
 package controller;
 
 import model.Animal;
-import model.Inseto;
-import model.Planta;
 import model.SerVivo;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class MeioAmbiente {
     private String nome;
@@ -76,46 +75,52 @@ public class MeioAmbiente {
 
     // Imprime na tela o barulho de um animal aleatoriamente
 
-    public void animalFazBarulho() {
+    public Animal obterAnimalAleatorio() {
+
+        Animal animalAleatorio = null;
+
         // Cria uma lista para armazenar os animais do ambiente
-        ArrayList<Animal> animais = new ArrayList<>();
+        ArrayList<Animal> listaAnimais = new ArrayList<>();
 
         // Para cada ser vivo do ambiente, filtra apenas os que são animais e adiciona na lista de animais
         for (SerVivo serVivoAtual : this.seresVivos) {
             if (serVivoAtual instanceof Animal) {
                 Animal animalAtual = (Animal) serVivoAtual;
-                animais.add(animalAtual);
+                listaAnimais.add(animalAtual);
             }
         }
 
         // Verifica se a lista não está vazia
-        if (!animais.isEmpty()) {
+        if (!listaAnimais.isEmpty()) {
 
             // Gera um índice aleatório de acordo com o tamanho do arraylist
             // Esse índice será utilizado para escolher um animal aleatoriamente
-            int indiceRandom = (int) (Math.random() * animais.size());
+            int indiceRandom = (int) (Math.random() * listaAnimais.size());
 
             //Encontra o animal aleatório e imprime o barulho
-            Animal animalAleatorio = animais.get(indiceRandom);
-            System.out.println("\n********** Barulho aleatório **********");
-            System.out.println("Animal: " + animalAleatorio.getNome());
-            System.out.println("Barulho: " + animalAleatorio.getBarulho());
-            System.out.println("****************************************\n");
+            animalAleatorio = listaAnimais.get(indiceRandom);
         }
-         else {
+        return animalAleatorio;
+    }
+
+    public void animalFazBarulho() {
+        if (obterAnimalAleatorio() != null) {
+            System.out.println("\n********** Barulho aleatório **********");
+            System.out.println("Animal: " + obterAnimalAleatorio().getNome());
+            System.out.println("Barulho: " + obterAnimalAleatorio().getBarulho());
+            System.out.println("****************************************\n");
+        } else {
             System.out.println("Não há animais no ambiente.");
         }
     }
 
-    // Imprime na tela o barulho de um animal escolhido pelo user
-    public void animalFazBarulho (Animal animalAtual) {
-        System.out.println(animalAtual.getBarulho());
-    }
-
-
     // Imprime na tela "O (nome do animal) movimentou-se"
-    public void animalMovimenta (Animal animal) {
-        System.out.println("O "+animal.getEspecie()+" movimentou-se");
+    public void animalMovimenta() {
+        if (obterAnimalAleatorio() != null) {
+            System.out.println(obterAnimalAleatorio().getNome() + " movimentou-se");
+        } else {
+            System.out.println("Não há animais no ambiente.");
+        }
     }
 
     // Verifica se há água suficiente para o animal beber
@@ -127,8 +132,8 @@ public class MeioAmbiente {
         double qtdAguaAnimal = animalAtual.getPeso() * 0.025;
 
         if (qtdAguaAnimal > this.qtdAguaDisponivel) {
-           removerSerVivo(animalAtual);
-           return false;
+            removerSerVivo(animalAtual);
+            return false;
         } else {
             this.qtdAguaDisponivel -= qtdAguaAnimal;
             return true;
@@ -223,10 +228,52 @@ public class MeioAmbiente {
 //        } else {
 //            System.out.println("Quantidade de água indisponível no ambiente. A planta " + plantaAtual.getNome() + "morreu.");
 //        }
-        System.out.println("\n***************** Simulador *****************");
-        animalFazBarulho();
-        insetoChateia();
-        plantaAbanaComVento();
- }
 
+        //plantaAbanaComVento();
+
+        Scanner input = new Scanner(System.in);
+        String opcao;
+
+        do {
+            System.out.println("\n******************* Simulador *******************\n");
+            System.out.println("Escolha uma opção:");
+            System.out.println("1. Gerar evento aleatório");
+            System.out.println("2. Alimentar ser vivo");
+            System.out.println("3. Hidratar ser vivo");
+            System.out.println("5. Movimentar um animal");
+            System.out.println("4. Barulho de animal");
+            System.out.println("6. Barulho de inseto");
+            System.out.println("7. Planta abana com vento");
+            System.out.println("8. Sair");
+            System.out.println("***************************************************************");
+            System.out.print("Digite a opção: ");
+            opcao = input.next();
+
+            switch (opcao) {
+                case "1":
+//                    meioAmbienteController.criarAmbiente("Floresta Tropical",1000000);
+                    break;
+                case "2":
+//                    meioAmbienteController.criarAmbiente("Savana",5000000);
+                    break;
+                case "3":
+//                    meioAmbienteController.criarAmbiente("Floresta Temperada",4000000);
+                    break;
+                case "4":
+                    animalFazBarulho();
+                    break;
+                case "5":
+                    animalMovimenta();
+                    break;
+                case "6":
+                    insetoChateia();
+                    break;
+                case "7":
+                    System.out.println("Opção selecionada: Sair. Até logo :)");
+                    System.exit(0);
+                default:
+                    System.out.println("Opção inválida!");
+            }
+        } while (!opcao.equals("6"));
+    }
 }

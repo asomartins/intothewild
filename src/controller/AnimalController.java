@@ -12,7 +12,7 @@ public class AnimalController {
     /**
      * Percorre o ficheiro para encontrar as linhas de animais de Floresta Tropical
      * Instancia os objetos de animais a partir da leitura do ficheiro
-     * Adiciona os animais criados no meio ambiente
+     * Adiciona os animais criados ao meio ambiente
      *
      * @throws FileNotFoundException
      */
@@ -83,12 +83,13 @@ public class AnimalController {
         } else {
             System.out.println("\nOs animais foram criados com sucesso.");
         }
+        scanner.close();
     }
 
     /**
      * Percorre o ficheiro para encontrar as linhas de animais de Savana
      * Instancia os objetos de animais a partir da leitura do ficheiro
-     * Adiciona os animais criados no meio ambiente
+     * Adiciona os animais criados ao meio ambiente
      *
      * @throws FileNotFoundException
      */
@@ -159,12 +160,14 @@ public class AnimalController {
         } else {
             System.out.println("\nOs animais foram criados com sucesso.");
         }
+
+        scanner.close();
     }
 
     /**
      * Percorre o ficheiro para encontrar as linhas de animais de Floresta Temperada
      * Instancia os objetos de animais a partir da leitura do ficheiro
-     * Adiciona os animais criados no meio ambiente
+     * Adiciona os animais criados ao meio ambiente
      *
      * @throws FileNotFoundException
      */
@@ -235,5 +238,7 @@ public class AnimalController {
         } else {
             System.out.println("\nOs animais foram criados com sucesso.");
         }
+
+        scanner.close();
     }
 }

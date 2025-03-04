@@ -1,6 +1,6 @@
 package view;
 
-import controller.*;
+import controller.MeioAmbienteController;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
@@ -9,18 +9,17 @@ public class MenuSelecaoAmbiente {
     /**
      * Menu de seleção do ambiente
      * Permite ao usuário escolher entre 3 opções de ambientes
-     * Chama a função de criação dos seres vivos de acordo com o ambiente selecionado
+     * Chama a função de criação do ambiente
      *
      * @throws FileNotFoundException
      */
     public static void exibirMenuSelecaoAmbiente() throws FileNotFoundException {
-        AnimalController animalController = new AnimalController();
-        PlantaController plantaController = new PlantaController();
-        InsetoController insetoController = new InsetoController();
-        MeioAmbiente meioAmbiente = null;
 
-        String opcao;
+        MeioAmbienteController meioAmbienteController = new MeioAmbienteController();
+
         Scanner input = new Scanner(System.in);
+        String opcao;
+
         do {
             System.out.println("\n***************************************************************");
             System.out.println("::: Seleção de Ambiente :::\n");
@@ -35,28 +34,13 @@ public class MenuSelecaoAmbiente {
 
             switch (opcao) {
                 case "1":
-                    meioAmbiente = new MeioAmbiente("Floresta Tropical",1000000);
-                    System.out.println("\nFloresta Tropical criada!");
-                    System.out.println("\nCriando seres vivos no ambiente...");
-                    animalController.criarAnimaisFlorestaTropical(meioAmbiente);
-                    plantaController.criarPlantasFlorestaTropical(meioAmbiente);
-                    insetoController.criarInsetosFlorestaTropical(meioAmbiente);
+                    meioAmbienteController.criarAmbiente("Floresta Tropical",1000000);
                     break;
                 case "2":
-                    meioAmbiente = new MeioAmbiente("Savana",5000000);
-                    System.out.println("\nSavana criada!");
-                    System.out.println("\nCriando seres vivos no ambiente...");
-                    animalController.criarAnimaisSavana(meioAmbiente);
-                    plantaController.criarPlantasSavana(meioAmbiente);
-                    insetoController.criarInsetosSavana(meioAmbiente);
+                    meioAmbienteController.criarAmbiente("Savana",5000000);
                     break;
                 case "3":
-                    meioAmbiente = new MeioAmbiente("Floresta Temperada",4000000);
-                    System.out.println("\nFloresta Temperada criada!");
-                    System.out.println("\nCriando seres vivos no ambiente...");
-                    animalController.criarAnimaisFlorestaTemperada(meioAmbiente);
-                    plantaController.criarPlantasFlorestaTemperada(meioAmbiente);
-                    insetoController.criarInsetosFlorestaTemperada(meioAmbiente);
+                    meioAmbienteController.criarAmbiente("Floresta Temperada",4000000);
                     break;
                 case "4":
                     System.out.println("Opção selecionada: Voltar ao menu inicial");
@@ -64,11 +48,6 @@ public class MenuSelecaoAmbiente {
                 default:
                     System.out.println("Opção inválida!");
             }
-
-            if (meioAmbiente != null) {
-                meioAmbiente.simulador();
-            }
-
         } while (!opcao.equals("4"));
     }
 }
