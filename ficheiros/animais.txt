@@ -1,16 +1,31 @@
 ambiente;nome;especie;pais;idade;fome;peso;inteligencia;dieta;barulho
 Floresta Tropical;Onça Pintada;Panthera onca;Brasil;5;sim;90.5;75;Carnívoro;Roar
-Floresta Tropical;Capivara;Hydrochoerus hydrochaeris;Brasil;3;não;45;30;Herbívoro;Squeak
-Floresta Tropical;Preguiça;Bradypus variegatus;Brasil;5;não;8;40;Herbívoro;Som suave
+Floresta Tropical;Capivara;Hydrochoerus hydrochaeris;Brasil;3;sim;45;30;Herbívoro;Squeak
+Floresta Tropical;Preguiça;Bradypus variegatus;Brasil;5;sim;8;40;Herbívoro;Som suave
 Floresta Tropical;Macaco-aranha;Ateles geoffroyi;Costa Rica;7;sim;9.2;82;Herbívoro;Chiados
-Floresta Tropical;Águia;Harpia harpyja;Brasil;4;não;7.5;88;Carnívoro;Grito agudo
+Floresta Tropical;Águia;Harpia harpyja;Brasil;4;sim;7.5;88;Carnívoro;Grito agudo
+Floresta Tropical;Arara-azul;Anodorhynchus hyacinthinus;Brasil;6;sim;1.5;70;Herbívoro;Gritos altos
+Floresta Tropical;Mico-leão-dourado;Leontopithecus rosalia;Brasil;4;sim;0.62;76;Onívoro;Trinados agudos
+Floresta Tropical;Quati;Nasua nasua;Brasil;3;sim;6;65;Onívoro;Grulhos
+Floresta Tropical;Anaconda;Eunectes murinus;Brasil;12;sim;150;50;Carnívoro;Sibilo suave
+Floresta Tropical;Jaguarundi;Puma yagouaroundi;Costa Rica;5;sim;9;74;Carnívoro;Miau baixo
 Savana;Leão;Panthera leo;Quênia;8;sim;190;80;Carnívoro;Rugido
 Savana;Guepardo;Acinonyx jubatus;Tanzânia;5;sim;60;70;Carnívoro;Miado
-Savana;Elefante Africano;Loxodonta africana;África do Sul;15;não;6000;60;Herbívoro;Trombetear
-Savana;Zebra;Equus quagga;Botswana;7;não;350.0;40;Herbívoro;Relincho
+Savana;Elefante Africano;Loxodonta africana;África do Sul;15;sim;6000;60;Herbívoro;Trombetear
+Savana;Zebra;Equus quagga;Botswana;7;sim;350.0;40;Herbívoro;Relincho
 Savana;Impala;Aepyceros melampus;Zimbábue;6;sim;50;50;Herbívoro;Chiar
-Floresta Temperada;Urso Pardo;Ursus arctos;EUA;10;não;320;75;Onívoro;Rugido
+Savana;Rinoceronte-negro;Diceros bicornis;Namíbia;12;sim;1400;65;Herbívoro;Bufar
+Savana;Búfalo-africano;Syncerus caffer;Uganda;10;sim;700;55;Herbívoro;Mugir
+Savana;Hiena-malhada;Crocuta crocuta;Quênia;8;sim;70;68;Carnívoro;Risada
+Savana;Girafa;Giraffa camelopardalis;Tanzânia;7;sim;1200;70;Herbívoro;Estalidos
+Savana;Facóquero;Phacochoerus africanus;África do Sul;5;sim;80;40;Onívoro;Grunhido
+Floresta Temperada;Urso Pardo;Ursus arctos;EUA;10;sim;320;75;Onívoro;Rugido
 Floresta Temperada;Lince Ibérico;Lynx pardinus;Espanha;7;sim;13;70;Carnívoro;Miado
 Floresta Temperada;Lobo Cinzento;Canis lupus;Alemanha;6;sim;40;80;Carnívoro;Uivo
 Floresta Temperada;Esquilo Cinza;Sciurus carolinensis;Canadá;3;sim;0.5;50;Onívoro;Guincho
 Floresta Temperada;Coelho Europeu;Oryctolagus cuniculus;França;4;sim;2;40;Herbívoro;Squeak
+Floresta Temperada;Raposa Vermelha;Vulpes vulpes;Reino Unido;5;sim;6.5;65;Onívoro;Latido
+Floresta Temperada;Texugo Europeu;Meles meles;Alemanha;8;sim;12;55;Onívoro;Grumido
+Floresta Temperada;Coruja-das-torres;Tyto alba;EUA;9;sim;0.8;70;Carnívoro;Uivar agudo
+Floresta Temperada;Veado-vermelho;Cervus elaphus;França;12;sim;240;65;Herbívoro;Berro
+Floresta Temperada;Marta-pedrês;Martes foina;Espanha;6;sim;1.5;60;Onívoro;Assobio

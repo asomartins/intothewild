@@ -4,13 +4,28 @@ floresta tropical;Aranha de Armadeira;Phoneutria;América do Sul;2;sim
 floresta tropical;Borboleta Morpho;Morpho peleides;América Central;1;não
 floresta tropical;Viúva-Negra;Latrodectus;América do Sul;3;sim
 floresta tropical;Grilo-cantor;Gryllus;América do Sul;1;não
+floresta tropical;Vespa Mandarina;Vespa mandarinia;Ásia;2;sim
+floresta tropical;Abelha Jataí;Tetragonisca angustula;América do Sul;1;não
+floresta tropical;Formiga Saúva;Atta cephalotes;América Central;3;não
+floresta tropical;Cigarrinha das folhas;Cicadellidae;América do Sul;1;não
+floresta tropical;Escorpião Amarelo;Tityus serrulatus;América do Sul;3;sim
 Savana;Escorpião;Scorpiones;África do Sul;1;sim
 Savana;Formiga Leão;Myrmeleontidae;Quênia;1;não
 Savana;Gafanhoto;Locusta migratoria;Tanzânia;1;não
 Savana;Cupim;Isoptera;Namíbia;1;não
 Savana;Aranha Viúva Negra;Latrodectus;Botsuana;1;sim
+Savana;Joaninha;Coccinellidae;África do Sul;1;não
+Savana;Borboleta Monarca;Danaus plexippus;Quênia;1;não
+Savana;Libélula;Anisoptera;Tanzânia;1;não
+Savana;Formiga Dorylus (Formiga-Correição);Dorylus;Namíbia;1;não
+Savana;Centopeia Gigante;Scolopendra;Botsuana;1;sim
 Floresta Temperada;Louva-a-deus;Mantis religiosa;EUA;1;não
 Floresta Temperada;Vespa;Vespula germanica;Reino Unido;1;sim
 Floresta Temperada;Aranha Lobo;Lycosidae;Canadá;1;sim
 Floresta Temperada;Joaninha;Coccinella septempunctata;França;1;não
 Floresta Temperada;Formiga-de-Folha;Atta colombica;México;1;não
+Floresta Temperada;Abelha Carpinteira;Xylocopa violacea;EUA;1;não
+Floresta Temperada;Mariposa Imperador;Saturnia pavonia;Reino Unido;1;não
+Floresta Temperada;Besouro Rinoceronte;Dynastinae;Canadá;1;não
+Floresta Temperada;Borboleta Azul;Polyommatus icarus;França;1;não
+Floresta Temperada;Escorpião de Madeira;Euscorpius flavicaudis;México;1;sim

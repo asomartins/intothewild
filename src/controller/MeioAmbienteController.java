@@ -8,13 +8,20 @@ public class MeioAmbienteController {
     private PlantaController plantaController = new PlantaController();
     private InsetoController insetoController = new InsetoController();
 
-    // Instancia o objeto meio ambiente
-    // Chama a função de criação dos seres vivos de acordo com o ambiente criado
-    // Invoca o simulador de meio ambiente
+    /**
+     * Cria e inicializa um ambiente específico com base no tipo de ambiente e na capacidade de água fornecida.
+     * Exibe o menu para controle dos eventos do meio ambiente
+     *
+     * @param tipoAmbiente
+     * @param capacidadeAgua
+     * @return meioAmbiente
+     * @throws FileNotFoundException
+     *
+     */
     public MeioAmbiente criarAmbiente(String tipoAmbiente, double capacidadeAgua) throws FileNotFoundException {
         MeioAmbiente meioAmbiente = new MeioAmbiente(tipoAmbiente, capacidadeAgua);
         inicializarSeresAmbiente(meioAmbiente, tipoAmbiente);
-        meioAmbiente.simulador();
+        meioAmbiente.exibirMenuMeioAmbiente();
         return meioAmbiente;
     }
 

@@ -81,7 +81,7 @@ public class AnimalController {
         if (!isAnimalFlorestaTropical) {
             System.out.println("Não foi possível criar os animais. O ficheiro não possui animais de floresta tropical!");
         } else {
-            System.out.println("\nOs animais foram criados com sucesso.");
+            System.out.println("\nAnimais criados com sucesso na Floresta Tropical.");
         }
         scanner.close();
     }
@@ -158,7 +158,7 @@ public class AnimalController {
         if (!isAnimalSavana) {
             System.out.println("Não foi possível adicionar os animais. O ficheiro não possui animais de savana!");
         } else {
-            System.out.println("\nOs animais foram criados com sucesso.");
+            System.out.println("\nAnimais criados com sucesso na Savana.");
         }
 
         scanner.close();
@@ -236,7 +236,7 @@ public class AnimalController {
         if (!isAnimalFlorestaTemperada) {
             System.out.println("Não foi possível adicionar os animais. O ficheiro não possui animais de floresta temperada!");
         } else {
-            System.out.println("\nOs animais foram criados com sucesso.");
+            System.out.println("\nAnimais criados com sucesso na floresta temperada.");
         }
 
         scanner.close();

@@ -42,22 +42,6 @@ public class Animal extends SerVivo{
         this.fome = fome;
     }
 
-    public Animal lutar(Animal adversario) {
-        if (this.peso > adversario.peso) {
-            return this;
-        } else if (this.peso < adversario.peso) {
-            return adversario;
-        } else if (this.peso == adversario.peso) {
-            if (this.inteligencia > adversario.inteligencia) {
-                return this;
-            } else if (this.inteligencia < adversario.inteligencia) {
-                return adversario;
-            }
-        }
-        return null;
-    }
-
-    // Imprime a descrição do animal
     public void imprimirDescricaoAnimal() {
         System.out.println("Está com fome: " + (this.fome ? "Sim" : "Não"));
         System.out.println("Peso: " + this.peso);

@@ -7,6 +7,7 @@ import java.util.Scanner;
 import static view.MenuInicialJogo.exibirMenuInicialJogo;
 
 public class IntoTheWildMain {
+
     /**
      * Função principal de abertura do jogo Into the Wild
      * Percorre o ficheiro para exibir uma Introdução e mensagem de boas vindas

@@ -4,11 +4,21 @@ Floresta Tropical;Papaya Comum;Carica papaya;Brasil;3;árvores;2
 Floresta Tropical;Erva de Passarinho;Phoradendron spp.;América do Sul;2;ervas;1
 Floresta Tropical;Orvalho do Sol;Drosera rotundifolia;Brasil;2;carnívoras;3
 Floresta Tropical;Hibiscus;Hibiscus rosa-sinensis;Brasil;3;flores;1
+Floresta Tropical;Orquídea Vanda;Vanda spp.;Tailândia;2;flores;2
+Floresta Tropical;Cacau;Theobroma cacao;Brasil;5;árvores;1
+Floresta Tropical;Palmeira Açaí;Euterpe oleracea;Brasil;4;árvores;1
+Floresta Tropical;Figo Estrangulador;Ficus aurea;México;3;árvores;3
+Floresta Tropical;Samambaia Arbórea;Cyathea spp.;Brasil;3;árvores;2
 Savana;Acácia;Acacia spp.;África Oriental;5;árvores;4
 Savana;Girassol selvagem;Helianthus spp.;África do Sul;2;flores;3
 Savana;Armadilha de Vênus;Dionaea muscipula;Quênia;4;carnívoras;5
 Savana;Planta Jarro;Nepenthes spp.;Tanzânia;3;carnívoras;5
 Savana;Capim-dos-pampas;Cortaderia selloana;Argentina;3;ervas;2
+Savana;Baobá;Adansonia digitata;Senegal;20;árvores;4
+Savana;Candelabro Euforbia;Euphorbia ingens;África do Sul;15;flores;4
+Savana;Marula;Sclerocarya birrea;Namíbia;10;árvores;3
+Savana;Leão-dente-de-leão;Taraxacum officinale;Quênia;1;flores;1
+Savana;Planta de Aloe Vera;Aloe vera;Tanzânia;5;flores;3
 Floresta Temperada;Carvalho;Quercus spp.;EUA;20;árvores;4
 Floresta Temperada;Lírio-do-vale;Convallaria majalis;Reino Unido;4;flores;2
 Floresta Temperada;Urtiga;Urtica dioica;Reino Unido;2;ervas;2
